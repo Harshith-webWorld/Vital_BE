@@ -1,0 +1,157 @@
+{
+	"Users": [
+		{
+			"firstName": "Super",
+			"lastName": "Admin",
+			"userName": "superadmin",
+			"email": "superadmin@mail.com",
+			"password": "super@12345",
+			"countryCode": "+91",
+			"mobile": "9876543232",
+			"role": "superadmin"
+		},
+		{
+			"firstName": "Admin",
+			"lastName": "Admin",
+			"userName": "admin",
+			"email": "admin@mail.com",
+			"password": "admin@12345",
+			"countryCode": "+91",
+			"mobile": "9876543233",
+			"role": "admin"
+		},
+		{
+			"firstName": "Admin",
+			"lastName": "Admin",
+			"userName": "nasar",
+			"email": "nasar.k@greatinnovus.com",
+			"password": "admin@12345",
+			"countryCode": "+91",
+			"mobile": "9876543222",
+			"role": "admin"
+		},
+		{
+			"firstName": "Aravindh",
+			"lastName": "Aravindh",
+			"userName": "aravindh.k",
+			"email": "aravindhkathiresan02@gmail.com",
+			"password": "123456",
+			"countryCode": "+91",
+			"mobile": "9876543252",
+			"role": "admin"
+		},
+		{
+			"firstName": "Aravindh",
+			"lastName": "Aravindh",
+			"userName": "aravindh",
+			"email": "aravindh.k@greatinnovus.com",
+			"password": "123456",
+			"countryCode": "+91",
+			"mobile": "9876543242",
+			"role": "admin"
+		},
+		{
+			"firstName": "Staff",
+			"lastName": "Staff",
+			"userName": "staff",
+			"email": "staff@mail.com",
+			"password": "staff@12345",
+			"countryCode": "+91",
+			"mobile": "9876543254",
+			"role": "staff"
+		},
+		{
+			"firstName": "Kathir",
+			"lastName": "Pandian",
+			"userName": "kathir",
+			"email": "kathirpandian@arkinfotec.com",
+			"password": "12345678",
+			"countryCode": "+91",
+			"mobile": "9876543254",
+			"role": "staff"
+		}
+	],
+	"ProjectCategories": [
+		{
+			"name": "Project Documentation",
+			"description": "Project Documentation",
+			"routeName": "ProjectDocumentation"
+		},
+		{
+			"name": "Work Monitoring Report",
+			"description": "Work Monitoring Report",
+			"routeName": "WorkMonitoringReport"
+		},
+		{
+			"name": "SOI & VO",
+			"description": "SOI & VO",
+			"routeName": "SOIVO"
+		},
+		{
+			"name": "Inspection Report",
+			"description": "Inspection Report",
+			"routeName": "InspectionReport"
+		},
+		{
+			"name": "TDS & MSDS",
+			"description": "TDS & MSDS",
+			"routeName": "TDSMSDS"
+		},
+		{
+			"name": "Claims",
+			"description": "Claims",
+			"routeName": "Claims"
+		},
+		{
+			"name": "Issues",
+			"description": "Issues",
+			"routeName": "IssueReport"
+		}
+	],
+	"Actions": [
+		{
+			"name": "Performance Bond",
+			"description": "Performance Bond"
+		},
+		{
+			"name": "Insurance (Work Injury Compensation)",
+			"description": "Insurance (Work Injury Compensation)"
+		},
+		{
+			"name": "Insurance (Contractor All Risk)",
+			"description": "Insurance (Contractor All Risk)"
+		},
+		{
+			"name": "Risk Assessment",
+			"description": "Risk Assessment"
+		},
+		{
+			"name": "PE Certificates",
+			"description": "PE Certificates"
+		},
+		{
+			"name": "Worker List",
+			"description": "Worker List"
+		},
+		{
+			"name": "Site Organization Chart",
+			"description": "Site Organization Chart"
+		},
+		{
+			"name": "Detailed Contract Programme",
+			"description": "Detailed Contract Programme"
+		},
+		{
+			"name": "Colour Schemes",
+			"description": "Colour Schemes"
+		},
+		{
+			"name": "Pre-Con Survey Report",
+			"description": "Pre-Con Survey Report"
+		},
+		{
+			"name": "Product Material Information(TDS/MSDS)",
+			"description": "Product Material Information(TDS/MSDS)"
+		}
+	]
+}

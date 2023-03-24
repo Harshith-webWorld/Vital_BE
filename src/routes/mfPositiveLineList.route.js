@@ -1,0 +1,111 @@
+import { check, param, query } from "express-validator";
+import mfPositiveController from "../controllers/mfPositiveLineList.controller";
+import bulkmfPositiveController from "../controllers/mfPositiveLineListbulk.controller";
+import express from "express";
+import label from "../../config/resources";
+
+const router = express.Router();
+router
+	.post(
+		"/createMfPositiveLineList",
+		mfPositiveController.createMfPositiveLineList
+	)
+	.post(
+		"/createAllMfPositiveLineList",
+		mfPositiveController.createAllMfPositiveLineList
+	)
+	.get("/listMfPositiveLineList", mfPositiveController.getMFPositiveLineList)
+	.get(
+		"/listMfPositiveLineList/:id",
+		mfPositiveController.getMFPositiveLineList
+	)
+	.put(
+		"/updateMfPositiveLineList/:id",
+		mfPositiveController.createMfPositiveLineList
+	)
+	.delete(
+		"/deleteMfPositiveLineList",
+		[query("id").exists().withMessage(label.ID_REQUIRED)],
+		mfPositiveController.deleteMFPositiveLineList
+	)
+	.post(
+		"/createMfPositiveLineListSurvey/:fieldUnitId",
+		mfPositiveController.createMfPositiveLineListSurvey
+	)
+	.get(
+		"/listMfPositiveLineListSurvey",
+		mfPositiveController.getMfPositiveLineListSurvey
+	)
+	.get(
+		"/listMfPositiveLineListSurvey/:fieldUnitId",
+		mfPositiveController.getMfPositiveLineListSurvey
+	)
+	.put(
+		"/updateMfPositiveLineListSurvey/:fieldUnitId",
+		mfPositiveController.createMfPositiveLineListSurvey
+	)
+	.delete(
+		"/deleteMfPositiveLineListSurvey",
+		[query("id").exists().withMessage(label.ID_REQUIRED)],
+		mfPositiveController.deleteMfPositiveLineListSurvey
+	)
+	.post(
+		"/createMfPositiveLineListPatients",
+		mfPositiveController.createMfPositiveLineListPatients
+	)
+	.get(
+		"/getAlllistMfPositiveLineListPatients/:fieldUnitId",
+		mfPositiveController.getMfPositiveLineListPatients
+	)
+	.get(
+		"/listMfPositiveLineListPatients/:id",
+		mfPositiveController.getMfPositiveLineListPatients
+	)
+	.put(
+		"/updateMfPositiveLineListPatients/:id",
+		mfPositiveController.createMfPositiveLineListPatients
+	)
+	.delete(
+		"/deleteMfPositiveLineListPatients",
+		[query("id").exists().withMessage(label.ID_REQUIRED)],
+		mfPositiveController.deleteMfPositiveLineListPatients
+	)
+	.post(
+		"/createMfPositiveLineListBSFollowUps",
+		mfPositiveController.createMfPositiveLineListBSFollowUps
+	)
+	.get(
+		"/getAlllistMfPositiveLineListBSFollowUps/:fieldUnitId",
+		mfPositiveController.getMfPositiveLineListBSFollowUps
+	)
+	.get(
+		"/listMfPositiveLineListBSFollowUps/:id",
+		mfPositiveController.getMfPositiveLineListBSFollowUps
+	)
+	.put(
+		"/updateMfPositiveLineListBSFollowUps/:id",
+		mfPositiveController.createMfPositiveLineListBSFollowUps
+	)
+	.delete(
+		"/deleteMfPositiveLineListBSFollowUps",
+		[query("id").exists().withMessage(label.ID_REQUIRED)],
+		mfPositiveController.deleteMfPositiveLineListBSFollowUps
+	)
+	.post(
+		"/bulkcreateMfPositiveLineList",
+		bulkmfPositiveController.bulkcreateMfPositiveLineList
+	)
+	.post(
+		"/bulkcreateMfPositiveLineListSurvey",
+		bulkmfPositiveController.bulkcreateMfPositiveLineListSurvey
+	)
+	.post(
+		"/bulkcreateMfPositiveLineListPatients",
+		bulkmfPositiveController.bulkcreateMfPositiveLineListPatients
+	)
+	.post(
+		"/bulkcreateMfPositiveLineListBSFollowUps",
+		bulkmfPositiveController.bulkcreateMfPositiveLineListBSFollowUps
+	);
+
+export default router;
